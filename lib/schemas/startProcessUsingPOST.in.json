@@ -1,0 +1,132 @@
+{
+    "type": "object",
+    "properties": {
+        "processInstance": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "businessKey": {
+                    "type": "string"
+                },
+                "variables": {
+                    "type": "object",
+                    "properties": {
+                        "documentId": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "DocumentId"
+                        },
+                        "filename": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "Filename"
+                        },
+                        "initiator": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "Initiator"
+                        },
+                        "initiatorEmail": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "InitiatorEmail"
+                        },
+                        "initiatorName": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "InitiatorName"
+                        },
+                        "processInstanceDescription": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "ProcessInstanceDescription"
+                        },
+                        "processInstanceReference": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "ProcessInstanceReference"
+                        },
+                        "tenantId": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "TenantId"
+                        },
+                        "tenantName": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "title": "TenantName"
+                        }
+                    },
+                    "title": "Variables"
+                }
+            },
+            "title": "ProcessRequest"
+        }
+    }
+}

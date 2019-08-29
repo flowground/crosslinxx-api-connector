@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "tenantid": {
+            "required": true,
+            "type": "string"
+        },
+        "talendjobname": {
+            "required": false,
+            "type": "string"
+        },
+        "includeProcessVariables": {
+            "required": false,
+            "type": "boolean"
+        },
+        "requeststatus": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        }
+    }
+}

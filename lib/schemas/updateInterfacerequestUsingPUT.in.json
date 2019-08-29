@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "camundajobid": {
+                    "type": "string"
+                },
+                "contextdata": {
+                    "type": "string"
+                },
+                "enddate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "id_": {
+                    "type": "string"
+                },
+                "interfacename": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "parameterdata": {
+                    "type": "string"
+                },
+                "processVariables": {
+                    "type": "string"
+                },
+                "processid": {
+                    "type": "string"
+                },
+                "requestcreationdate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "requeststatus": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "returndata": {
+                    "type": "string"
+                },
+                "startdate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "talendjobname": {
+                    "type": "string"
+                },
+                "tenantid": {
+                    "type": "string"
+                }
+            },
+            "title": "Interfacerequest"
+        }
+    }
+}

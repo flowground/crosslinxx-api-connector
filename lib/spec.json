@@ -1,0 +1,1597 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "description": "API für die Interaktion mit crosslinxx Prozessen.",
+        "version": "1.0.0",
+        "title": "crosslinxx API"
+    },
+    "tags": [
+        {
+            "name": "basic-error-controller",
+            "description": "Basic Error Controller"
+        },
+        {
+            "name": "interfacerequest-controller",
+            "description": "Interfacerequest Controller"
+        }
+    ],
+    "paths": {
+        "/authentification/login": {
+            "get": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Liefert Access und Refresh Token",
+                "operationId": "getAuthUsingGET",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/error": {
+            "get": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingGET",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "head": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingHEAD",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingPOST",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingPUT",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingDELETE",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "options": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingOPTIONS",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "basic-error-controller"
+                ],
+                "summary": "error",
+                "operationId": "errorUsingPATCH",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/interfacerequests/async": {
+            "get": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Liefert alle Interfacerquests zu einer bestimmten TenantId und einem Talendjobnamen",
+                "operationId": "getInterfacerequestByTenantUsingGET",
+                "parameters": [
+                    {
+                        "name": "tenantid",
+                        "in": "query",
+                        "description": "tenantid",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "talendjobname",
+                        "in": "query",
+                        "description": "talendjobname",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "includeProcessVariables",
+                        "in": "query",
+                        "description": "includeProcessVariables",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "requeststatus",
+                        "in": "query",
+                        "description": "requeststatus",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/interfacerequests/async/processVariables": {
+            "get": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Liefert die Prozessvariablen aller Interfacerequests, die am selben Tag des Requests erstellt wurden anhand des InputParameterSyncCall",
+                "operationId": "getProcessVariablesForAsyncInterfacerequestUsingGET",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/interfacerequests/sync": {
+            "get": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Liefert einen bestimmten Interfacerequest anhand dessen ID",
+                "operationId": "getInterfacerequestUsingGET",
+                "parameters": [
+                    {
+                        "name": "includeProcessVariables",
+                        "in": "query",
+                        "description": "includeProcessVariables",
+                        "required": true,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/interfacerequests/sync/processVariables": {
+            "get": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Liefert alle Prozessvariablen anhand des InputParameterSyncCall",
+                "operationId": "getProcessVariablesForSyncInterfacerequestUsingGET",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/interfacerequests/{id}": {
+            "put": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Aktualisiert Werte eines Interfacerequests",
+                "operationId": "updateInterfacerequestUsingPUT",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "camundajobid": {
+                                        "type": "string"
+                                    },
+                                    "contextdata": {
+                                        "type": "string"
+                                    },
+                                    "enddate": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "id_": {
+                                        "type": "string"
+                                    },
+                                    "interfacename": {
+                                        "type": "string"
+                                    },
+                                    "message": {
+                                        "type": "string"
+                                    },
+                                    "parameterdata": {
+                                        "type": "string"
+                                    },
+                                    "processVariables": {
+                                        "type": "string"
+                                    },
+                                    "processid": {
+                                        "type": "string"
+                                    },
+                                    "requestcreationdate": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "requeststatus": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                    },
+                                    "returndata": {
+                                        "type": "string"
+                                    },
+                                    "startdate": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "talendjobname": {
+                                        "type": "string"
+                                    },
+                                    "tenantid": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "Interfacerequest"
+                            }
+                        }
+                    },
+                    "description": "interfacerequestReq",
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/processes/{id}": {
+            "get": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Liefert Informationen über einen Prozess anhand dessen ID",
+                "operationId": "getProcessVariablesUsingGET",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "camundajobid": {
+                                            "type": "string"
+                                        },
+                                        "contextdata": {
+                                            "type": "string"
+                                        },
+                                        "enddate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "id_": {
+                                            "type": "string"
+                                        },
+                                        "interfacename": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "parameterdata": {
+                                            "type": "string"
+                                        },
+                                        "processVariables": {
+                                            "type": "string"
+                                        },
+                                        "processid": {
+                                            "type": "string"
+                                        },
+                                        "requestcreationdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "requeststatus": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        },
+                                        "returndata": {
+                                            "type": "string"
+                                        },
+                                        "startdate": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "talendjobname": {
+                                            "type": "string"
+                                        },
+                                        "tenantid": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Interfacerequest"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        },
+        "/processes/{processInstance}": {
+            "post": {
+                "tags": [
+                    "interfacerequest-controller"
+                ],
+                "summary": "Startet einen neuen crosslinxx Prozess",
+                "operationId": "startProcessUsingPOST",
+                "parameters": [
+                    {
+                        "name": "processInstance",
+                        "in": "path",
+                        "description": "processInstance",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "businessKey": {
+                                        "type": "string"
+                                    },
+                                    "variables": {
+                                        "type": "object",
+                                        "properties": {
+                                            "documentId": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "DocumentId"
+                                            },
+                                            "filename": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "Filename"
+                                            },
+                                            "initiator": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "Initiator"
+                                            },
+                                            "initiatorEmail": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "InitiatorEmail"
+                                            },
+                                            "initiatorName": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "InitiatorName"
+                                            },
+                                            "processInstanceDescription": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "ProcessInstanceDescription"
+                                            },
+                                            "processInstanceReference": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "ProcessInstanceReference"
+                                            },
+                                            "tenantId": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "TenantId"
+                                            },
+                                            "tenantName": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "title": "TenantName"
+                                            }
+                                        },
+                                        "title": "Variables"
+                                    }
+                                },
+                                "title": "ProcessRequest"
+                            }
+                        }
+                    },
+                    "description": "processRequest",
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "//apidev.crosslinxx.com/v1"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "basicAuth": {
+                "type": "http",
+                "scheme": "basic"
+            }
+        },
+        "schemas": {
+            "Auth": {
+                "type": "object",
+                "properties": {
+                    "accessToken": {
+                        "type": "string"
+                    },
+                    "refreshToken": {
+                        "type": "string"
+                    }
+                },
+                "title": "Auth"
+            },
+            "DocumentId": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "DocumentId"
+            },
+            "Filename": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "Filename"
+            },
+            "Initiator": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "Initiator"
+            },
+            "InitiatorEmail": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "InitiatorEmail"
+            },
+            "InitiatorName": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "InitiatorName"
+            },
+            "Interfacerequest": {
+                "type": "object",
+                "properties": {
+                    "camundajobid": {
+                        "type": "string"
+                    },
+                    "contextdata": {
+                        "type": "string"
+                    },
+                    "enddate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "id_": {
+                        "type": "string"
+                    },
+                    "interfacename": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "parameterdata": {
+                        "type": "string"
+                    },
+                    "processVariables": {
+                        "type": "string"
+                    },
+                    "processid": {
+                        "type": "string"
+                    },
+                    "requestcreationdate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "requeststatus": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "returndata": {
+                        "type": "string"
+                    },
+                    "startdate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "talendjobname": {
+                        "type": "string"
+                    },
+                    "tenantid": {
+                        "type": "string"
+                    }
+                },
+                "title": "Interfacerequest"
+            },
+            "ModelAndView": {
+                "type": "object",
+                "properties": {
+                    "empty": {
+                        "type": "boolean"
+                    },
+                    "model": {
+                        "type": "object"
+                    },
+                    "modelMap": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object"
+                        }
+                    },
+                    "reference": {
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "100 CONTINUE",
+                            "101 SWITCHING_PROTOCOLS",
+                            "102 PROCESSING",
+                            "103 CHECKPOINT",
+                            "200 OK",
+                            "201 CREATED",
+                            "202 ACCEPTED",
+                            "203 NON_AUTHORITATIVE_INFORMATION",
+                            "204 NO_CONTENT",
+                            "205 RESET_CONTENT",
+                            "206 PARTIAL_CONTENT",
+                            "207 MULTI_STATUS",
+                            "208 ALREADY_REPORTED",
+                            "226 IM_USED",
+                            "300 MULTIPLE_CHOICES",
+                            "301 MOVED_PERMANENTLY",
+                            "302 FOUND",
+                            "302 MOVED_TEMPORARILY",
+                            "303 SEE_OTHER",
+                            "304 NOT_MODIFIED",
+                            "305 USE_PROXY",
+                            "307 TEMPORARY_REDIRECT",
+                            "308 PERMANENT_REDIRECT",
+                            "400 BAD_REQUEST",
+                            "401 UNAUTHORIZED",
+                            "402 PAYMENT_REQUIRED",
+                            "403 FORBIDDEN",
+                            "404 NOT_FOUND",
+                            "405 METHOD_NOT_ALLOWED",
+                            "406 NOT_ACCEPTABLE",
+                            "407 PROXY_AUTHENTICATION_REQUIRED",
+                            "408 REQUEST_TIMEOUT",
+                            "409 CONFLICT",
+                            "410 GONE",
+                            "411 LENGTH_REQUIRED",
+                            "412 PRECONDITION_FAILED",
+                            "413 PAYLOAD_TOO_LARGE",
+                            "413 REQUEST_ENTITY_TOO_LARGE",
+                            "414 URI_TOO_LONG",
+                            "414 REQUEST_URI_TOO_LONG",
+                            "415 UNSUPPORTED_MEDIA_TYPE",
+                            "416 REQUESTED_RANGE_NOT_SATISFIABLE",
+                            "417 EXPECTATION_FAILED",
+                            "418 I_AM_A_TEAPOT",
+                            "419 INSUFFICIENT_SPACE_ON_RESOURCE",
+                            "420 METHOD_FAILURE",
+                            "421 DESTINATION_LOCKED",
+                            "422 UNPROCESSABLE_ENTITY",
+                            "423 LOCKED",
+                            "424 FAILED_DEPENDENCY",
+                            "426 UPGRADE_REQUIRED",
+                            "428 PRECONDITION_REQUIRED",
+                            "429 TOO_MANY_REQUESTS",
+                            "431 REQUEST_HEADER_FIELDS_TOO_LARGE",
+                            "451 UNAVAILABLE_FOR_LEGAL_REASONS",
+                            "500 INTERNAL_SERVER_ERROR",
+                            "501 NOT_IMPLEMENTED",
+                            "502 BAD_GATEWAY",
+                            "503 SERVICE_UNAVAILABLE",
+                            "504 GATEWAY_TIMEOUT",
+                            "505 HTTP_VERSION_NOT_SUPPORTED",
+                            "506 VARIANT_ALSO_NEGOTIATES",
+                            "507 INSUFFICIENT_STORAGE",
+                            "508 LOOP_DETECTED",
+                            "509 BANDWIDTH_LIMIT_EXCEEDED",
+                            "510 NOT_EXTENDED",
+                            "511 NETWORK_AUTHENTICATION_REQUIRED"
+                        ]
+                    },
+                    "view": {
+                        "type": "object",
+                        "properties": {
+                            "contentType": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "View"
+                    },
+                    "viewName": {
+                        "type": "string"
+                    }
+                },
+                "title": "ModelAndView"
+            },
+            "ProcessInstanceDescription": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "ProcessInstanceDescription"
+            },
+            "ProcessInstanceReference": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "ProcessInstanceReference"
+            },
+            "ProcessRequest": {
+                "type": "object",
+                "properties": {
+                    "businessKey": {
+                        "type": "string"
+                    },
+                    "variables": {
+                        "type": "object",
+                        "properties": {
+                            "documentId": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "DocumentId"
+                            },
+                            "filename": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "Filename"
+                            },
+                            "initiator": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "Initiator"
+                            },
+                            "initiatorEmail": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "InitiatorEmail"
+                            },
+                            "initiatorName": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "InitiatorName"
+                            },
+                            "processInstanceDescription": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "ProcessInstanceDescription"
+                            },
+                            "processInstanceReference": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "ProcessInstanceReference"
+                            },
+                            "tenantId": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "TenantId"
+                            },
+                            "tenantName": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "title": "TenantName"
+                            }
+                        },
+                        "title": "Variables"
+                    }
+                },
+                "title": "ProcessRequest"
+            },
+            "TenantId": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "TenantId"
+            },
+            "TenantName": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "title": "TenantName"
+            },
+            "Variables": {
+                "type": "object",
+                "properties": {
+                    "documentId": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "DocumentId"
+                    },
+                    "filename": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "Filename"
+                    },
+                    "initiator": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "Initiator"
+                    },
+                    "initiatorEmail": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "InitiatorEmail"
+                    },
+                    "initiatorName": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "InitiatorName"
+                    },
+                    "processInstanceDescription": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "ProcessInstanceDescription"
+                    },
+                    "processInstanceReference": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "ProcessInstanceReference"
+                    },
+                    "tenantId": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "TenantId"
+                    },
+                    "tenantName": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "title": "TenantName"
+                    }
+                },
+                "title": "Variables"
+            },
+            "View": {
+                "type": "object",
+                "properties": {
+                    "contentType": {
+                        "type": "string"
+                    }
+                },
+                "title": "View"
+            }
+        }
+    }
+}

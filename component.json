@@ -1,0 +1,282 @@
+{
+    "title": "crosslinxx API",
+    "description": "API fur die Interaktion mit crosslinxx Prozessen.",
+    "docsUrl": "",
+    "url": "http://localhost",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "//apidev.crosslinxx.com/v1",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "auth_username": {
+                "label": "Username (basicAuth)",
+                "viewClass": "TextFieldView"
+            },
+            "auth_password": {
+                "label": "Password (basicAuth)",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "getAuthUsingGET": {
+            "main": "./lib/actions/getAuthUsingGET.js",
+            "title": "Liefert Access und Refresh Token",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAuthUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingGET": {
+            "main": "./lib/actions/errorUsingGET.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingHEAD": {
+            "main": "./lib/actions/errorUsingHEAD.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingHEAD.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingPOST": {
+            "main": "./lib/actions/errorUsingPOST.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingPOST.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingPUT": {
+            "main": "./lib/actions/errorUsingPUT.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingPUT.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingDELETE": {
+            "main": "./lib/actions/errorUsingDELETE.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingDELETE.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingOPTIONS": {
+            "main": "./lib/actions/errorUsingOPTIONS.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingOPTIONS.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "errorUsingPATCH": {
+            "main": "./lib/actions/errorUsingPATCH.js",
+            "title": "error",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/errorUsingPATCH.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getInterfacerequestByTenantUsingGET": {
+            "main": "./lib/actions/getInterfacerequestByTenantUsingGET.js",
+            "title": "Liefert alle Interfacerquests zu einer bestimmten TenantId und einem Talendjobnamen",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getInterfacerequestByTenantUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProcessVariablesForAsyncInterfacerequestUsingGET": {
+            "main": "./lib/actions/getProcessVariablesForAsyncInterfacerequestUsingGET.js",
+            "title": "Liefert die Prozessvariablen aller Interfacerequests, die am selben Tag des Requests erstellt wurden anhand des InputParameterSyncCall",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProcessVariablesForAsyncInterfacerequestUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getInterfacerequestUsingGET": {
+            "main": "./lib/actions/getInterfacerequestUsingGET.js",
+            "title": "Liefert einen bestimmten Interfacerequest anhand dessen ID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getInterfacerequestUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProcessVariablesForSyncInterfacerequestUsingGET": {
+            "main": "./lib/actions/getProcessVariablesForSyncInterfacerequestUsingGET.js",
+            "title": "Liefert alle Prozessvariablen anhand des InputParameterSyncCall",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProcessVariablesForSyncInterfacerequestUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "updateInterfacerequestUsingPUT": {
+            "main": "./lib/actions/updateInterfacerequestUsingPUT.js",
+            "title": "Aktualisiert Werte eines Interfacerequests",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/updateInterfacerequestUsingPUT.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProcessVariablesUsingGET": {
+            "main": "./lib/actions/getProcessVariablesUsingGET.js",
+            "title": "Liefert Informationen uber einen Prozess anhand dessen ID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProcessVariablesUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "startProcessUsingPOST": {
+            "main": "./lib/actions/startProcessUsingPOST.js",
+            "title": "Startet einen neuen crosslinxx Prozess",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/startProcessUsingPOST.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
