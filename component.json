@@ -2,7 +2,7 @@
     "title": "crosslinxx API",
     "description": "API fur die Interaktion mit crosslinxx Prozessen.",
     "docsUrl": "",
-    "url": "http://localhost",
+    "url": "//apidev.crosslinxx.com/v1",
     "envVars": {},
     "credentials": {
         "fields": {

@@ -4,8 +4,8 @@
 
 A generated **flow**ground connector for the crosslinxx API API (version 1.0.0).
 
-Generated from: http://localhost<br/>
-Generated at: 2019-08-29T12:44:40+03:00
+Generated from: //apidev.crosslinxx.com/v1<br/>
+Generated at: 2019-09-12T09:19:25+00:00
 
 ## API Description
 
