@@ -5,7 +5,7 @@
 A generated **flow**ground connector for the crosslinxx API API (version 1.0.0).
 
 Generated from: //apidev.crosslinxx.com/v1<br/>
-Generated at: 2019-09-23T11:04:58+00:00
+Generated at: 2019-09-23T12:48:09+00:00
 
 ## API Description
 
