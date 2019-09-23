@@ -5,11 +5,11 @@
 A generated **flow**ground connector for the crosslinxx API API (version 1.0.0).
 
 Generated from: //apidev.crosslinxx.com/v1<br/>
-Generated at: 2019-09-23T09:57:03+00:00
+Generated at: 2019-09-23T11:04:58+00:00
 
 ## API Description
 
-API f�r die Interaktion mit crosslinxx Prozessen.<br/>
+API für die Interaktion mit crosslinxx Prozessen.<br/>
 
 ## Authorization
 
@@ -89,7 +89,7 @@ Supported authorization schemes:
 #### Input Parameters
 * `id` - _required_ - id<br/>
 
-### Liefert Informationen ber einen Prozess anhand dessen ID
+### Liefert Informationen uber einen Prozess anhand dessen ID
 
 *Tags:* `interfacerequest-controller`
 
