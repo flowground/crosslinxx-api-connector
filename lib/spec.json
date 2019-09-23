@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "description": "API für die Interaktion mit crosslinxx Prozessen.",
+        "description": "API f�r die Interaktion mit crosslinxx Prozessen.",
         "version": "1.0.0",
         "title": "crosslinxx API"
     },
@@ -800,7 +800,7 @@
                 "tags": [
                     "interfacerequest-controller"
                 ],
-                "summary": "Liefert Informationen über einen Prozess anhand dessen ID",
+                "summary": "Liefert Informationen �ber einen Prozess anhand dessen ID",
                 "operationId": "getProcessVariablesUsingGET",
                 "parameters": [
                     {

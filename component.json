@@ -1,6 +1,6 @@
 {
     "title": "crosslinxx API",
-    "description": "API fur die Interaktion mit crosslinxx Prozessen.",
+    "description": "API fr die Interaktion mit crosslinxx Prozessen.",
     "docsUrl": "",
     "url": "//apidev.crosslinxx.com/v1",
     "envVars": {},
@@ -248,7 +248,7 @@
         },
         "getProcessVariablesUsingGET": {
             "main": "./lib/actions/getProcessVariablesUsingGET.js",
-            "title": "Liefert Informationen uber einen Prozess anhand dessen ID",
+            "title": "Liefert Informationen ber einen Prozess anhand dessen ID",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",

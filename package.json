@@ -1,7 +1,7 @@
 {
     "name": "crosslinxx-api-connector",
     "version": "1.0.0",
-    "description": "API für die Interaktion mit crosslinxx Prozessen.",
+    "description": "API f�r die Interaktion mit crosslinxx Prozessen.",
     "main": "component.json",
     "dependencies": {
         "elasticio-node": "0.0.9",
